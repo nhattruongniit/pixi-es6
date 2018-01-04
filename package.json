@@ -1,0 +1,16 @@
+{
+    "name": "pixi-es6",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "scripts": {
+        "serve": "webpack-dev-server"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "pixi.js": "^4.6.2",
+        "webpack": "^3.10.0",
+        "webpack-dev-server": "^2.9.7"
+    }
+}
