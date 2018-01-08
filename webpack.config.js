@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-    entry: './app.js',
+    entry: './index.js',
     output: {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'dist'),
@@ -12,7 +12,7 @@ module.exports = {
         contentBase: path.join(__dirname, './'),
         compress: true,
         port: 9000
-    },
+    }
     // externals: [
     //     // Don't bundle pixi.js, assume it'll be included in the HTML via a script
     //     // tag, and made available in the global variable PIXI.

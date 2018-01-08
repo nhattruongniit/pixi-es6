@@ -1,15 +1,35 @@
-import * as PIXI from 'pixi.js';
+import { Application, Sprite, loader, utils } from 'pixi.js';
 
-import Stage from './stage';
+class App extends Application {
+    constructor(options) {
+        super(options);
+
+        this.load();
+    }
+
+    load(callback) {
 
 
-export default class extends PIXI.Application {
-    constructor() {
-        super();
+        loader.add('./assets/images/main-evil.png');
+        loader.load(this.onImageLoadComplete.bind(this));
 
     }
 
-    load() {
+    onImageLoadComplete() {
+        this.onImageLoadComplete = true;
+        this.onLoadComplete();
+    }
 
+    onLoadComplete() {
+        console.log(utils.TextureCache['./assets/images/main-evil.png']);
+        const character = new Sprite(utils.TextureCache['./assets/images/main-evil.png']);
+        character.width = 500;
+        character.height = 500;
+        character.x = 0;
+        character.y = 0;
+
+        this.stage.addChild(character);
     }
 }
+
+export default App;

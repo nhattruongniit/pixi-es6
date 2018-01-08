@@ -1,16 +1,23 @@
 {
-    "name": "pixi-es6",
-    "version": "1.0.0",
-    "description": "",
-    "main": "app.js",
-    "scripts": {
-        "serve": "webpack-dev-server"
-    },
-    "author": "",
-    "license": "ISC",
-    "dependencies": {
-        "pixi.js": "^4.6.2",
-        "webpack": "^3.10.0",
-        "webpack-dev-server": "^2.9.7"
-    }
+  "name": "pixi-es6",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "webpack-dev-server",
+    "build": "webpack"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/pixi.js": "^4.6.3",
+    "brfs": "^1.4.3",
+    "pixi.js": "^4.6.2",
+    "source-map-loader": "^0.2.3",
+    "transform-loader": "^0.2.4",
+    "ts-loader": "^3.2.0",
+    "typescript": "^2.6.2",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.9.7"
+  }
 }
