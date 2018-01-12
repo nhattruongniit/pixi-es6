@@ -11,6 +11,14 @@ class App extends Application {
 
 
         loader.add('./assets/images/main-evil.png');
+
+        // Function.prototype.bind = function(This){
+        //     var fn = this;
+        //     return function(){
+        //         return fn.apply(This,arguments);
+        //     };
+        // }
+
         loader.load(this.onImageLoadComplete.bind(this));
 
     }
